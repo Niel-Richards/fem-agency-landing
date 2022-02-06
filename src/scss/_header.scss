@@ -1,0 +1,83 @@
+.header {
+    color: $white;
+    font-family: $barlow;
+    
+    &__logo {
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__hero {
+        font-family:$fraunces;
+        text-transform: uppercase;
+    }
+    
+    @include breakpoint-down (medium) {
+        background-image: url('../../images/mobile/image-header.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-left: 1.44rem;
+        padding-right: 1.44rem;
+        padding-top: 1.94rem;
+        min-height: 33.5em;
+
+        &__logo {
+            font-size: 1.63rem;
+        }
+
+        &__hero {
+            margin-top: 3em;
+            padding: 0;
+
+        }
+        
+        &__hero__p {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__hero__arrow {
+            margin-top: 3.5em;
+        }
+
+
+    }
+
+    @include breakpoint-up (medium) {
+        background-image: url('../../images/desktop/image-header.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        padding-top: 2.75rem;
+        padding-left: 2.38rem;
+        padding-right: 2.38rem;
+        min-height: 49.06em;
+
+        &__logo {
+            font-size: 2.06rem;
+        }
+
+        &__links .header__menu__item {
+            margin-left: 2.38rem;
+        }
+
+        &__links .header__menu__item:last-child {
+            background-color: $white;
+            font-family: $fraunces;
+            color: $very-dark-desaturated-blue;
+            padding: 1.25rem;
+            text-transform: uppercase;
+            border-radius: 29px;
+        }
+
+        &__links .header__menu__item:last-child:active,
+        &__links .header__menu__item:last-child:hover {
+            background-color: rgb(111, 207, 255);
+            color: $white;
+        }
+       
+    }
+
+}
