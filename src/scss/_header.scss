@@ -16,8 +16,9 @@
     @include breakpoint-down (medium) {
         background-image: url('../../images/mobile/image-header.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100%;
+        // background-attachment: fixed;
+        background-size: contain;
+        // background-size: 100%;
         padding-left: 1.44rem;
         padding-right: 1.44rem;
         padding-top: 1.94rem;
@@ -48,8 +49,8 @@
     @include breakpoint-up (medium) {
         background-image: url('../../images/desktop/image-header.jpg');
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100%;
+        // background-attachment:fixed;
+        background-size: contain;
         padding-top: 2.75rem;
         padding-left: 2.38rem;
         padding-right: 2.38rem;

@@ -7,6 +7,7 @@
 /design
 README-template.md
 style-guide.md
+*.code-workspace
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
