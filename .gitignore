@@ -4,6 +4,7 @@
 #####################################################
 *.sketch
 *.fig
+NOTES.md
 /design
 README-template.md
 style-guide.md
