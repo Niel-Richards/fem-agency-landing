@@ -80,4 +80,29 @@ body {
     &-align-c {
         text-align: center;
     }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-fraunces {
+        font-family: $fraunces;
+    }
+
+    &-barlow {
+        font-family: $barlow;
+    }
+
+    //Spacing
+    .m {
+        &t-1 {
+            margin-top: 1em;
+        }
+        &t-2 {
+            margin-top: 2em;
+        }
+        &t-3 {
+            margin-top: 3em;
+        }
+    }
 }
