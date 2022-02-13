@@ -44,22 +44,98 @@ main {
         content: " ";
         display: block;
         position: absolute;
-        background-color: $yellow;
         border-radius: 5px;
-        opacity: 0.6;
         height:0.6em;
         width:108%;
         text-align: center;
         bottom: 0;
         z-index: -1;
     }
+    
+    &__transform__blurb a::after {
+        background-color: $yellow;
+        opacity: 0.6;
+    }
+   
+    &__audience a::after{
+        background-color: $soft-red;
+        opacity: 0.6;
+    }
+
+    &__graphic-design {
+        color: $dark-desaturated-cyan;
+        position: relative;
+        // margin: 1em;
+    }
+
+    &__graphic-design img {
+        color: $dark-desaturated-cyan;
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__text {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__text p {
+        font-size: 1.125em;
+    }
+
+    &__photography {
+        color: $dark-blue;
+        position: relative;
+    }
 }
 
 .testimonials {
     max-width: 90em;
+    padding: 9.6875em;
+    
+    &__title {
+        width: 100%;
+        font-size: 1.2em;
+        letter-spacing: 0.3em;
+        font-weight: 800;
+        color: $grayish-blue;
+        margin-bottom: 4.625em;
+    }
+
+    .clients img {
+        width: 4.625em;
+        height: 4.625em;
+        border-radius: 50%;
+        margin-bottom: 4.5em;
+    }
+
+    &__text {
+        font-family: $barlow;
+        color: $very-dark-grayish-blue;
+        line-height: 1.125em;
+    }
+    
+    &__name {
+        font-family: $fraunces;
+        font-size: 1.2em;
+        font-weight: 800;
+        margin-top: 4.75em;
+    }
+
+    &__role {
+        font-family: $barlow;
+        font-size: 0.8em;
+        color: $grayish-blue;
+    }
+
+    &__card {
+        padding: 3em;
+    }
 }
-
-
 
 .gallery {
     max-width: inherit;

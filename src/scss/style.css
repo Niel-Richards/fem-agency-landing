@@ -253,9 +253,7 @@ main {
   content: " ";
   display: block;
   position: absolute;
-  background-color: #fad400;
   border-radius: 5px;
-  opacity: 0.6;
   height: 0.6em;
   width: 108%;
   text-align: center;
@@ -263,8 +261,88 @@ main {
   z-index: -1;
 }
 
+.services__transform__blurb a::after {
+  background-color: #fad400;
+  opacity: 0.6;
+}
+
+.services__audience a::after {
+  background-color: #fe7867;
+  opacity: 0.6;
+}
+
+.services__graphic-design {
+  color: #25564b;
+  position: relative;
+}
+
+.services__graphic-design img {
+  color: #25564b;
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: -1;
+}
+
+.services__text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services__text p {
+  font-size: 1.125em;
+}
+
+.services__photography {
+  color: #19536b;
+  position: relative;
+}
+
 .testimonials {
   max-width: 90em;
+  padding: 9.6875em;
+}
+
+.testimonials__title {
+  width: 100%;
+  font-size: 1.2em;
+  letter-spacing: 0.3em;
+  font-weight: 800;
+  color: #a7abae;
+  margin-bottom: 4.625em;
+}
+
+.testimonials .clients img {
+  width: 4.625em;
+  height: 4.625em;
+  border-radius: 50%;
+  margin-bottom: 4.5em;
+}
+
+.testimonials__text {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+  line-height: 1.125em;
+}
+
+.testimonials__name {
+  font-family: "Fraunces", serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-top: 4.75em;
+}
+
+.testimonials__role {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.8em;
+  color: #a7abae;
+}
+
+.testimonials__card {
+  padding: 3em;
 }
 
 .gallery {
