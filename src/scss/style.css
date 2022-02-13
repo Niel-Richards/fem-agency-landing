@@ -202,10 +202,6 @@ body {
   }
 }
 
-main {
-  border: 1px solid black;
-}
-
 .services {
   max-width: inherit;
   display: -ms-grid;
@@ -365,7 +361,6 @@ main {
   .gallery__wrapper {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    background-color: blue;
   }
 }
 
@@ -373,7 +368,6 @@ main {
   .gallery__wrapper {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    background-color: red;
   }
 }
 /*# sourceMappingURL=style.css.map */
