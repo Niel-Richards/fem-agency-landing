@@ -14,6 +14,13 @@ body {
     line-height: 1.3;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
 //Flexbox 
 .flex {
     display: flex;

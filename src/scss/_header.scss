@@ -1,6 +1,10 @@
 .header {
     color: $white;
     font-family: $barlow;
+    max-width: 90em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     
     &__logo {
         font-weight: 400;
@@ -15,9 +19,6 @@
     
     @include breakpoint-down (medium) {
         background-image: url('../../images/mobile/image-header.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100%;
         padding-left: 1.44rem;
         padding-right: 1.44rem;
         padding-top: 1.94rem;
@@ -47,9 +48,6 @@
 
     @include breakpoint-up (medium) {
         background-image: url('../../images/desktop/image-header.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100%;
         padding-top: 2.75rem;
         padding-left: 2.38rem;
         padding-right: 2.38rem;
@@ -76,6 +74,16 @@
         &__links .header__menu__item:last-child:hover {
             background-color: rgb(111, 207, 255);
             color: $white;
+        }
+
+        &__hero {
+            margin-top: 8.1875em;
+            // padding: 0;
+
+        }
+
+        &__hero__arrow {
+            margin-top: 6.25em;
         }
        
     }
