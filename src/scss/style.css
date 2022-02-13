@@ -229,15 +229,19 @@ main {
   padding: 5.5em 9.8125em 0 9.8125em;
 }
 
-.services__transform__blurb h1 {
+.services__audience {
+  padding: 5.5em 9.8125em 0 9.8125em;
+}
+
+.services__transform__blurb h1, .services__audience h1 {
   color: #23303e;
 }
 
-.services__transform__blurb p {
+.services__transform__blurb p, .services__audience p {
   color: #818498;
 }
 
-.services__transform__blurb a {
+.services__transform__blurb a, .services__audience a {
   margin-top: 3em;
   position: relative;
   text-decoration: none;
@@ -245,7 +249,7 @@ main {
   color: #23303e;
 }
 
-.services__transform__blurb a::after {
+.services__transform__blurb a::after, .services__audience a::after {
   content: " ";
   display: block;
   position: absolute;

@@ -19,16 +19,20 @@ main {
     &__transform__blurb {
         padding: 5.5em 9.8125em 0 9.8125em;
     }
+
+    &__audience {
+        padding: 5.5em 9.8125em 0 9.8125em;
+    }
     
-    &__transform__blurb h1 {
+    &__transform__blurb h1, &__audience h1 {
         color: $very-dark-desaturated-blue;
     }
 
-    &__transform__blurb p {
+    &__transform__blurb p, &__audience p {
         color: $dark-grayish-blue;
     }
 
-    &__transform__blurb a {
+    &__transform__blurb a, &__audience a {
         margin-top: 3em;
         position: relative;
         text-decoration: none;
@@ -36,7 +40,7 @@ main {
         color: $very-dark-desaturated-blue;
     }
 
-    &__transform__blurb a::after{
+    &__transform__blurb a::after, &__audience a::after{
         content: " ";
         display: block;
         position: absolute;
