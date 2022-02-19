@@ -448,4 +448,42 @@ body {
         grid-template-columns: repeat(4, 1fr);
   }
 }
+
+footer {
+  background-color: #90d4c5;
+  font-family: "Barlow", sans-serif;
+  color: #25564b;
+  padding-bottom: 2em;
+}
+
+footer h1 {
+  font-weight: 600;
+}
+
+footer a {
+  text-decoration: none;
+  color: #25564b;
+}
+
+footer .links {
+  margin: 1.8em 0 2.6em 0;
+  text-decoration: none;
+}
+
+footer .links a:not(:last-child) {
+  margin-right: 3.4375em;
+}
+
+footer .socials img:not(:last-child) {
+  margin-right: 1.275em;
+}
+
+.attribution {
+  background-color: #90d4c5;
+  font-family: "Barlow", sans-serif;
+}
+
+.attribution a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

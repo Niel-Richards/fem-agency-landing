@@ -1,9 +1,38 @@
 footer {
-    background-color: $dark-moderate-cyan;
-    // opacity: 0.6;
+    background-color: hsl(167, 44.2, 69.8);
+    font-family: $barlow;
     color: $dark-desaturated-cyan;
+    padding-bottom: 2em;
 
     h1 {
         font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        color: $dark-desaturated-cyan;
+    }
+
+    .links {
+        margin: 1.8em 0 2.6em 0;
+        text-decoration: none;
+    }
+
+    .links a:not(:last-child) {
+        margin-right: 3.4375em;
+
+    }
+
+    .socials img:not(:last-child) {
+        margin-right: 1.275em;
+    }
+}
+
+.attribution {
+    background-color: hsl(167, 44.2, 69.8);
+    font-family: $barlow;
+
+    a {
+        text-decoration: none;
     }
 }
