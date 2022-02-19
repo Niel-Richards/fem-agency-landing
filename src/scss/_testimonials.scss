@@ -1,34 +1,23 @@
 .testimonials {
-    max-width: 90em;
-    padding: 9.6875em;
-    
-    &__title {
-        width: 100%;
-        font-size: 1.2em;
-        letter-spacing: 0.3em;
-        font-weight: 800;
-        color: $grayish-blue;
-        margin-bottom: 4.625em;
-    }
+    display: grid;
 
-    .clients img {
+    &__card img {
         width: 4.625em;
         height: 4.625em;
         border-radius: 50%;
-        margin-bottom: 4.5em;
+        margin-bottom: 1.5em;
     }
 
     &__text {
         font-family: $barlow;
         color: $very-dark-grayish-blue;
-        line-height: 1.125em;
     }
-    
+
     &__name {
         font-family: $fraunces;
         font-size: 1.2em;
         font-weight: 800;
-        margin-top: 4.75em;
+        // margin-top: 4.75em;
     }
 
     &__role {
@@ -37,7 +26,46 @@
         color: $grayish-blue;
     }
 
-    &__card {
-        padding: 3em;
+    @include breakpoint-down (medium) {
+        grid-template-columns: 1fr;
+        padding: 1.4375em;
+
+        & > div {
+            margin-top: 2.8em;
+        }
+
+        &__title {
+            font-family: $fraunces;
+            font-weight: 800;
+            color: $grayish-blue;
+            letter-spacing: 0.3em;
+            width: 100%;
+            // border: 2px solid black;
+        }
+
+    }
+
+    @include breakpoint-up (medium) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        max-width: 90em;
+        padding: 9.75em;
+        
+        &__title {
+            width: 100%;
+            font-size: 1.2em;
+            letter-spacing: 0.3em;
+            font-weight: 800;
+            color: $grayish-blue;
+            margin-bottom: 4.625em;
+        }
+    
+        &__text {
+            line-height: 1.125em;
+        }
+    
+        &__card {
+            padding: 3em;
+        }
     }
 }
