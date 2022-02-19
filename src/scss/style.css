@@ -111,15 +111,15 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-.text .mt-1 {
+.mt-1 {
   margin-top: 1em;
 }
 
-.text .mt-2 {
+.mt-2 {
   margin-top: 2em;
 }
 
-.text .mt-3 {
+.mt-3 {
   margin-top: 3em;
 }
 
@@ -208,11 +208,13 @@ body {
   display: grid;
 }
 
-@media (min-width: 42em) {
-  .services {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
+.services .learn-more {
+  text-decoration: none;
+  position: relative;
+}
+
+.services h1, .services .learn-more {
+  color: #23303e;
 }
 
 .services img {
@@ -221,50 +223,18 @@ body {
   display: block;
 }
 
-.services__transform__blurb {
-  padding: 5.5em 9.8125em 0 9.8125em;
-}
-
-.services__audience {
-  padding: 5.5em 9.8125em 0 9.8125em;
-}
-
-.services__transform__blurb h1, .services__audience h1 {
-  color: #23303e;
-}
-
 .services__transform__blurb p, .services__audience p {
   color: #818498;
 }
 
-.services__transform__blurb a, .services__audience a {
-  margin-top: 3em;
-  position: relative;
-  text-decoration: none;
-  padding-left: 0.6em;
-  color: #23303e;
-}
-
-.services__transform__blurb a::after, .services__audience a::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  border-radius: 5px;
-  height: 0.6em;
-  width: 108%;
-  text-align: center;
-  bottom: 0;
-  z-index: -1;
-}
-
 .services__transform__blurb a::after {
   background-color: #fad400;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .services__audience a::after {
   background-color: #fe7867;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .services__graphic-design {
@@ -272,29 +242,111 @@ body {
   position: relative;
 }
 
-.services__graphic-design img {
-  color: #25564b;
-  position: absolute;
-  display: block;
-  width: 100%;
-  z-index: -1;
-}
-
-.services__text {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.services__text p {
-  font-size: 1.125em;
-}
-
 .services__photography {
   color: #19536b;
   position: relative;
+}
+
+@media (max-width: 41.9375em) {
+  .services {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .services > div:nth-child(2) {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .services__transform__blurb, .services__audience {
+    padding: 2em 1.9em;
+  }
+  .services__transform__blurb p, .services__audience p {
+    text-align: center;
+  }
+  .services__transform__blurb h1, .services__audience h1 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+  .services__photography h1, .services__graphic-design h1 {
+    font-size: 1.8125rem;
+    text-align: center;
+    width: 100%;
+  }
+  .services .learn-more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .services .learn-more::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    height: 0.5em;
+    width: 40%;
+    text-align: center;
+    left: 50%;
+    bottom: -4px;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .services__text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100%;
+    padding: 0 1.275em;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .services__text h1 {
+    font-size: 1.8125em;
+  }
+}
+
+@media (min-width: 42em) {
+  .services {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .services__transform__blurb {
+    padding: 5.5em 9.8125em 0 9.8125em;
+  }
+  .services__audience {
+    padding: 5.5em 9.8125em 0 9.8125em;
+  }
+  .services__transform__blurb a, .services__audience a {
+    margin-top: 3em;
+    position: relative;
+    padding-left: 0.6em;
+  }
+  .services .learn-more::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    height: 0.5em;
+    width: 100%;
+    text-align: center;
+    left: 54%;
+    bottom: -4px;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .services__text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .services__text p {
+    font-size: 1.125em;
+  }
 }
 
 .testimonials {

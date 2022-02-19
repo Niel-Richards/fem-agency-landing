@@ -93,16 +93,17 @@ body {
         font-family: $barlow;
     }
 
-    //Spacing
-    .m {
-        &t-1 {
-            margin-top: 1em;
-        }
-        &t-2 {
-            margin-top: 2em;
-        }
-        &t-3 {
-            margin-top: 3em;
-        }
+}
+
+//Spacing
+.m {
+    &t-1 {
+        margin-top: 1em;
+    }
+    &t-2 {
+        margin-top: 2em;
+    }
+    &t-3 {
+        margin-top: 3em;
     }
 }
