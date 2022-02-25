@@ -40,7 +40,6 @@
             color: $grayish-blue;
             letter-spacing: 0.3em;
             width: 100%;
-            // border: 2px solid black;
         }
 
     }
@@ -49,7 +48,7 @@
         grid-template-columns: 1fr 1fr 1fr;
 
         max-width: 90em;
-        padding: 9.75em;
+        padding: 8em;
         
         &__title {
             width: 100%;
@@ -58,6 +57,7 @@
             font-weight: 800;
             color: $grayish-blue;
             margin-bottom: 4.625em;
+            grid-column: span 3;
         }
     
         &__text {
